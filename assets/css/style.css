@@ -77,7 +77,7 @@ nav img{
 }
 .name h1{
     font-size: 35px;
-}
+}   
 .dark{
     cursor: pointer;
 }
@@ -187,16 +187,16 @@ i.fa{
 	transform:scale(1.15);
 }
 .git:hover{
-    fill:black
-	    transform:scale(1.15);
+    fill:black;
+	transform:scale(1.20);
 }
 .discord:hover{
 	fill:#7289DA;
 	transform:scale(1.15);
 }
 .mail:hover{
-    fill:white
-	    transform:scale(1.15);
+    fill:white;
+	transform:scale(1.15);
 }
 .right{
   
@@ -208,6 +208,17 @@ i.fa{
   right: -150px;
   fill: #a9a9b3;
     }
+.left{
+  
+  padding: 1vh 0;
+  width: 24px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;	
+  left: -150px;
+  fill: #a9a9b3;
+    }
+
 
 .para{
 /*     margin-right: 15px; */
@@ -273,6 +284,9 @@ i.fa{
     }
     .about{
         max-width: 80%;
+    }
+    .left{
+        left:0px;
     }
     .right{
         right: 0px;
