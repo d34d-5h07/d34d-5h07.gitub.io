@@ -194,6 +194,11 @@ i.fa{
 	fill:#7289DA;
 	transform:scale(1.15);
 }
+.steam:hover{
+    fill:black;
+    transform:scale(1.15);
+}
+}
 .mail:hover{
     fill:white;
 	transform:scale(1.15);
