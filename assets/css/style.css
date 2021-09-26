@@ -195,10 +195,10 @@ i.fa{
 	transform:scale(1.15);
 }
 .steam:hover{
-    fill:black;
+    fill:white;
     transform:scale(1.15);
 }
-}
+
 .mail:hover{
     fill:white;
 	transform:scale(1.15);
