@@ -203,6 +203,9 @@ i.fa{
     fill:white;
 	transform:scale(1.15);
 }
+.Xbox:hover{
+	fill:#107C10;
+	transform:scale(1.15);
 .right{
   
   padding: 1vh 0;
