@@ -25,15 +25,12 @@ a{
 #main.light .change{
     fill: black;
 }
-
 /* end dark mode */
 /* main section */
 #main{
     width: 100%;
     height: 100vh;
     background-color: #292A2D;
-
-
 }
 .main__container{
     margin: 0 auto;
@@ -89,9 +86,7 @@ nav img{
     justify-content: center;
     height: 100vh;
     width: 100%;
-
 }
-
 .body{
     margin: 0 auto;
     position: absolute;
@@ -146,7 +141,6 @@ nav img{
 .body .name{
     padding: 4vh 0;
 }
-
 .name h1{
     padding: 1vh;
     font-family: 'VT323', monospace;
@@ -195,18 +189,13 @@ i.fa{
 	transform:scale(1.15);
 }
 .steam:hover{
-    fill:black;
-    transform:scale(1.15);
-}
-
-.mail:hover{
     fill:white;
     transform:scale(1.15);
+} 
+.mail:hover{
+    fill:white;
+	transform:scale(1.15);
 }
-
-.xbox:hover{
-    fill:#107C10;
-    transform:scale(1.15);
 .right{
   
   padding: 1vh 0;
@@ -227,8 +216,6 @@ i.fa{
   left: -150px;
   fill: #a9a9b3;
     }
-
-
 .para{
 /*     margin-right: 15px; */
     padding: 1vh 0;
@@ -258,7 +245,6 @@ i.fa{
     border-radius: 10px;
     padding: 7vh 6vh ;
     max-width: 500px;
-
 }
 .about h2{
     border-bottom: 1px solid chartreuse;
@@ -309,7 +295,6 @@ i.fa{
         padding: 10vh 0 4vh 0;
     }
 }
-
 @keyframes blink {
     from{
         opacity: 1;ish
