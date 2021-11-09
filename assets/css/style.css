@@ -200,6 +200,7 @@ i.fa{
     fill:white;
 	transform:scale(1.15);
 }
+
 .right{
   
   padding: 1vh 0;
@@ -213,13 +214,23 @@ i.fa{
 .left{
   
   padding: 1vh 0;
-  width: 24px;
+  width: 65px;
   display: flex;
   flex-direction: column;
   position: absolute;	
-  left: -150px;
+  left: -50px;
+  top: 50px;
   fill: #a9a9b3;
     }
+
+.left img{
+    border-radius: 50%;     
+}
+
+.left img:hover{
+    fill:red;
+    transform: scale(1);
+}
 .para{
 /*     margin-right: 15px; */
     padding: 1vh 0;
