@@ -192,6 +192,10 @@ i.fa{
     fill:white;
     transform:scale(1.15);
 } 
+.xbox:hover{
+    fill:#107C10;
+    transform:scale(1.15);
+} 
 .mail:hover{
     fill:white;
 	transform:scale(1.15);
