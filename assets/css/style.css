@@ -201,11 +201,12 @@ i.fa{
 
 .mail:hover{
     fill:white;
-	transform:scale(1.15);
+    transform:scale(1.15);
 }
-.Xbox:hover{
-	fill:#107C10;
-	transform:scale(1.15);
+
+.xbox:hover{
+    fill:#107C10;
+    transform:scale(1.15);
 .right{
   
   padding: 1vh 0;
