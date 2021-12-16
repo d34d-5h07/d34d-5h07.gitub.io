@@ -37,7 +37,7 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark" src="images/logo-default.png" srcset="images/logo-default@2x.png 2x" alt="Voelas"/><img class="brand-logo-light" src="images/logo-inverse.png" srcset="images/logo-inverse@2x.png 2x" alt="Voelas"/></a>
+                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark">Shop Name</a>
                   </div>
                 </div>
                 <!-- Rd Navbar Navigation-->
@@ -316,7 +316,7 @@
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li>
                       </ul>
-                      <div class="testimonial-footer"><a class="testimonial-name" href="#">Sarah Rose</a> <span class="testimonial-cite">-  Our Customers</span>
+                      <div class="testimonial-footer"><a class="testimonial-name" href="#"></a> <span class="testimonial-cite">-  Our Customers</span>
                       </div>
                     </div>
                   </div>
@@ -481,21 +481,88 @@
           </svg>
         </div>
       </section>
-      <!-- Section Newsletter Sign Up-->
-      <section class="section section-lg bg-default text-center">
+       <!--Forms-->
+       <section class="section section-lg bg-default text-center">
         <div class="container">
-          <div class="row justify-content-center row-30">
-            <div class="col-md-10 col-lg-8">
-              <h6>newsletter signup</h6>
-              <h3>Join for news updates.</h3>
-              <br>
-              <form action="/HTML/site/forms.html" class="inline">
-                <button class="button button-primary" data-triangle=".button-overlay"><span>Join</span><span class="button-overlay"></span></button>
-            </form>
-
-                 
+          <div class="row justify-content-md-center">
+            <div class="col-md-9 col-lg-7 col-xl-5">
+              <h4>Login form</h4>
+               
+              <!--RD Mailform-->
+              <form class="rd-form rd-mailform rd-form-centered">
+                <div class="form-wrap">
+                  <input class="form-input" id="Fname" type="text" name="Fname" data-constraints="@Required">
+                  <label class="form-label" for="Fname">Full Name</label>
                 </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="password" type="email" name="Email" data-constraints="@Required">
+                  <label class="form-label" for="password">Email</label>
+                </div>
+                <div class="form-wrap">
+                  <select>
+                    <label class="form-label" for="Location">Select Location</label>
+                    <option value="l1">Location</option>
+                    <option value="l2">aus</option>
+                    <option value="l3">Fgiafft</option>
+                    <option value="l4">Ahgf</option>
+                  </select>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="login-password" type="password" name="password" data-constraints="@Required">
+                  <label class="form-label" for="login-password">Password</label>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="login-password" type="password" name="password" data-constraints="@Required">
+                  <label class="form-label" for="login-password">Password</label>
+                </div>
+                <div class="form-wrap">
+                  <input class="form-input" id="login-password" type="password" name="password" data-constraints="@Required">
+                  <label class="form-label" for="login-password">Password</label>
+                </div>
+                <button class="button button-block button-primary" type="submit" data-triangle=".button-overlay"><span>Enter</span><span class="button-overlay"></span></button>
               </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Contact Us-->
+      <!-- <section class="section section-lg bg-default text-center">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-6">
+              <h4>Contact Us</h4> -->
+              <!--RD Mailform-->
+              <!-- <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                <div class="row row-sm-bottom row-20">
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-2-name" type="text" name="name" data-constraints="@Required">
+                      <label class="form-label" for="contact-2-name">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-wrap">
+                      <input class="form-input" id="contact-2-email" type="email" name="email" data-constraints="@Email @Required">
+                      <label class="form-label" for="contact-2-email">E-mail</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-wrap">
+                      <label class="form-label" for="contact-2-message">Your Message</label>
+                      <textarea class="form-input" id="contact-2-message" name="message" data-constraints="@Required"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-wrap form-validation-left">
+                      Google captcha
+                      <div class="recaptcha" id="captcha1" data-sitekey="6LfZlSETAAAAAC5VW4R4tQP8Am_to4bM3dddxkEt" data-auto-size=""></div>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="button button-lg button-primary" type="submit" data-triangle=".button-overlay"><span>Send Message</span><span class="button-overlay"></span></button>
+                  </div>
+                </div>
+              </form> -->
             </div>
           </div>
         </div>
