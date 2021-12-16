@@ -10,8 +10,14 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+      $(document).ready(function(){
+          $("#video-link-wrapper").modal('show');
+      });
+  </script>
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
+  
   <body>
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
@@ -37,77 +43,9 @@
                   <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
                   <!--RD Navbar Brand-->
                   <div class="rd-navbar-brand">
-                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark">Shop Name</a>
+                    <!--Brand--><a class="brand" href="index.html"><img class="brand-logo-dark">Shop Name (icon)</a>
                   </div>
                 </div>
-                <!-- Rd Navbar Navigation-->
-                <!-- <div class="rd-navbar-main-element">
-                  <div class="rd-navbar-nav-wrap">
-                    <ul class="rd-navbar-nav">
-                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Home</a>
-                        <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="index.html">Home 1</a>
-                          </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="home-2.html">Home 2</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">Pages</a>
-                        <ul class="rd-menu rd-navbar-megamenu">
-                          <li class="rd-megamenu-item">
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="about.html">About</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="pricing.html">Pricing</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="gallery.html">Gallery</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="become-a-sponsor.html">Become a sponsor</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="sponsors.html">Sponsors</a></li>
-                            </ul>
-                          </li>
-                          <li class="rd-megamenu-item">
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="typography.html">Typography</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="buttons.html">Buttons</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="forms.html">Forms</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="progress-bars.html">Progress bars</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="tables.html">Tables</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="grid-system.html">Grid system</a></li>
-                            </ul>
-                          </li>
-                          <li class="rd-megamenu-item">
-                            <ul class="rd-megamenu-list">
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="404.html">404</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="503.html">503</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="privacy-policy.html">Privacy policy</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="under-construction.html">Under Construction</a></li>
-                              <li class="rd-megamenu-list-item"><a class="rd-megamenu-list-link" href="search-results.html">Search results</a></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="speakers.html">Speakers</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="schedule.html">Schedule</a>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="#">News</a>
-                        <ul class="rd-menu rd-navbar-dropdown">
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="news-right-sidebar.html">News Right Sidebar</a>
-                          </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="news-left-sidebar.html">News Left Sidebar</a>
-                          </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="news-grid.html">News Grid</a>
-                          </li>
-                          <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="single-news.html">Single News</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div> -->
-                <!-- RD Navbar Collapse-->
-                <!-- <div class="rd-navbar-collapse"><a class="button button-primary" href="#" data-triangle=".button-overlay"><span>Buy Tickets</span><span class="button-overlay"></span></a>
-                </div> -->
               </div>
             </div>
           </nav>
@@ -133,29 +71,8 @@
                 <!-- List Inline-->
                 <ul class="list-inline list-inline-md wow" data-splitting data-wow-delay="1.5s">
                   <li>
-                    <!-- <div class="unit unit-spacing-xs align-items-center">
-                      <div class="unit-left line-height-reset">
-                        <svg class="svg-icon-sm svg-icon-primary" role="img">
-                          <use xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                        </svg>
-                      </div>
-                      <div class="unit-body">
-                        <h5 class="text-spacing-100"><span class="big">New York, USA</span></h5>
-                      </div>
-                    </div> -->
                   </li>
                   <li>
-                    <!-- <div class="unit unit-spacing-xs align-items-center">
-                      <div class="unit-left line-height-reset">
-                        <svg class="svg-icon-sm svg-icon-primary" role="img">
-                          <use xlink:href="images/svg/sprite.svg#small-calendar"></use>
-                        </svg>
-                      </div>
-                      <div class="unit-body">
-                        <h5 class="text-spacing-100"><span class="big">
-                            <time datetime="2019-01-05">January 5 to 9, 2019</time></span></h5>
-                      </div>
-                    </div> -->
                   </li>
                 </ul>
               </div>
@@ -167,7 +84,7 @@
               <div class="unit-body text-right">
                 <h5><span class="big">Watch Promo<br> Video</span></h5>
               </div>
-              <div class="unit-right"><a class="video-link" href="https://youtu.be/nbfFDnKkMvw" data-lightgallery="item">
+              <div class="unit-right" ><a class="video-link" id="Videolink" href="https://www.youtube.com/embed/dQw4w9WgXcQ" data-lightgallery="item">s
                   <div class="video-link-bg" data-triangle=".video-link-overlay"><span class="video-link-overlay"></span></div><span class="icon fa-play"></span></a></div>
             </div>
           </div>
@@ -190,8 +107,8 @@
           <div class="row row-30 justify-content-center">
             <div class="col-md-10 col-lg-6 col-xl-5">
               <h6>about event</h6>
-              <h3 class="heading-lg-postfix-15">Biggest 2019 Digital conference.</h3>
-              <p>There are many variations of passages of available but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of you need to be sure there isn't anything embarrassing hidden in the middle of text. All the generators on the Internet.</p>
+              <h3 class="heading-lg-postfix-15">Event Name</h3>
+              <p>This is a paragraph</p>
               <!-- List Inline-->
               <!-- <ul class="list-inline list-inline-xl">
                 <li>
@@ -308,7 +225,7 @@
                   <div class="testimonial">
                     <div class="wow fadeIn">
                       <!-- Testimonial-->
-                      <p class="testimonial-text heading-4">Cum luna manducare, omnes historiaes magicae fortis, brevis lanistaes. Eheu, nobilis agripeta! Teres, pius animaliss foris imperium de.</p>
+                      <p class="testimonial-text heading-4">This is a paragraph</p>
                       <ul class="list-inline">
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
@@ -316,7 +233,7 @@
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li>
                       </ul>
-                      <div class="testimonial-footer"><a class="testimonial-name" href="#"></a> <span class="testimonial-cite">-  Our Customers</span>
+                      <div class="testimonial-footer"><a class="testimonial-name" href="#"></a> <span class="testimonial-cite">Author -  Our Customers</span>
                       </div>
                     </div>
                   </div>
@@ -325,7 +242,7 @@
                   <div class="testimonial">
                     <div class="wow fadeIn">
                       <!-- Testimonial-->
-                      <p class="testimonial-text heading-4">This is due to their excellent service, competitive pricing and customer support. It’s throughly refresing to get such a personal touch.</p>
+                      <p class="testimonial-text heading-4">This is a paragraph</p>
                       <ul class="list-inline">
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
@@ -333,7 +250,7 @@
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star-half-empty"></span></li>
                       </ul>
-                      <div class="testimonial-footer"><a class="testimonial-name" href="#">Kevin Martin</a> <span class="testimonial-cite">-  Our Customers</span>
+                      <div class="testimonial-footer"><a class="testimonial-name" href="#">Author</a> <span class="testimonial-cite">-  Our Customers</span>
                       </div>
                     </div>
                   </div>
@@ -342,7 +259,7 @@
                   <div class="testimonial">
                     <div class="wow fadeIn">
                       <!-- Testimonial-->
-                      <p class="testimonial-text heading-4">Pes rusticus brabeuta est. Pol, talis lapsus! Contencio de fidelis palus, transferre brodium! Germanus, varius decors aliquando gratia de.</p>
+                      <p class="testimonial-text heading-4">This is a paragraph</p>
                       <ul class="list-inline">
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
@@ -350,7 +267,7 @@
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                         <li><span class="icon icon-sm icon-secondary fa-star"></span></li>
                       </ul>
-                      <div class="testimonial-footer"><a class="testimonial-name" href="#">Jesscia Brown</a> <span class="testimonial-cite">-  Our Customers</span>
+                      <div class="testimonial-footer"><a class="testimonial-name" href="#">author</a> <span class="testimonial-cite">-  Our Customers</span>
                       </div>
                     </div>
                   </div>
@@ -596,14 +513,14 @@
       <section class="section section-lg bg-gray-900">
         <div class="container">
           <div class="row row-30">
-            <div class="col-xs-10 col-lg-4 align-self-center"><a class="brand" href="index.html"><img class="brand-logo-light" src="images/logo-inverse-big.png" srcset="images/logo-inverse-big@2x.png 2x" alt="Voelas"></a></div>
+            <div class="col-xs-10 col-lg-4 align-self-center">Add Icon here</div>
             <div class="col-xs-10 col-sm-6 col-lg-4">
               <h5><span class="big font-weight-sbold">Event detail</span></h5>
               <div class="event-detail">
                 <p class="event-detail-time big">
-                  <time data-splitting datetime="2019-01-05">January 5 to 9, 2019</time>
+                  <time data-splitting datetime="2019-01-05">date</time>
                 </p>
-                <p class="event-detail-address big" data-splitting>66 Road Broklyn Street BNG 275 New York. United States of America.</p><a class="event-detail-link" href="contact.html">View map location</a>
+                <p class="event-detail-address big" data-splitting>address</p><a class="event-detail-link" href="contact.html"></a>
               </div>
             </div>
             <div class="col-xs-10 col-sm-6 col-lg-4">
@@ -631,8 +548,8 @@
       <!-- Footer Classic-->
       <footer class="section footer-classic context-dark">
         <div class="container">
-          <p class="rights"><span>Copyright&nbsp;</span><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>by</span> <a href="https://www.deadshot.gq">Deadshot</a>
-          </p>
+          <!-- <p class="rights"><span>Copyright&nbsp;</span><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>by</span> <a href="https://www.deadshot.gq">Deadshot</a>
+          </p> -->
         </div>
       </footer>
     </div>
