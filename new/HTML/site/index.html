@@ -489,17 +489,20 @@
               <h4>Login form</h4>
                
               <!--RD Mailform-->
-              <form class="rd-form rd-mailform rd-form-centered">
+                <form  class="rd-form rd-mailform rd-form-centered" action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSc0tKJafRCDWJZuKGwxJNCU6EwbN50q5QMS--OIa486DARLWQ/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
                 <div class="form-wrap">
-                  <input class="form-input" id="Fname" type="text" name="Fname" data-constraints="@Required">
+                  <input class="form-input" id="Fname" type="text" name="Fname" required name="entry.378462688" data-constraints="@Required">
                   <label class="form-label" for="Fname">Full Name</label>
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="password" type="email" name="Email" data-constraints="@Required">
+                  <input class="form-input" id="password" type="email" name="Email" required name="entry.1979412633" data-constraints="">
                   <label class="form-label" for="password">Email</label>
                 </div>
                 <div class="form-wrap">
-                  <select>
+                  <input class="form-input" id="location" type="text" name="Location" required name="entry.504163341" data-constraints="">
+                  <label class="form-label" for="location">Location</label>
+                  <!-- <select>
                     <option value="">Select Location</option>
                     <option value="l4">Add_Location</option>
                     <option value="l2">Add_Location</option>
@@ -508,35 +511,35 @@
                     <option value="l2">Add_Location</option>
                     <option value="l3">Add_Location</option>
                   </select>
-              
+               -->
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="event" type="text" name="event" data-constraints="@Required">
+                  <input class="form-input" id="event" type="text" name="event" required name="entry.188326170" data-constraints="@Required">
                   <label class="form-label" for="event">Event Type</label>
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="number" type="text" name="number" data-constraints="@Required">
+                  <input class="form-input" id="number" type="text" name="number" required name="entry.145910818" data-constraints="@Required">
                   <label class="form-label" for="number">Number of people</label>
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="cuisine" type="text" name="cuisine" data-constraints="@Required">
+                  <input class="form-input" id="cuisine" type="text" name="cuisine" required name="entry.104003992" data-constraints="@Required">
                   <label class="form-label" for="cuisine">Cuisine</label>
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="Service" type="text" name="Service" data-constraints="@Required">
+                  <input class="form-input" id="Service" type="text" name="Service" required name="entry.1166058561" data-constraints="@Required">
                   <label class="form-label" for="Service">Service Type</label>
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="Hire_p" type="text" name="Hire_p" data-constraints="@Required">
+                  <input class="form-input" id="Hire_p" type="text" name="Hire_p" required name="entry.1236627977" data-constraints="@Required">
                   <label class="form-label" for="Hire_p">Hire Personal</label>
                 </div>
                 <div class="form-wrap">
-                  <input class="form-input" id="Hire_eq" type="text" name="Hire_eq" data-constraints="@Required">
+                  <input class="form-input" id="Hire_eq" type="text" name="Hire_eq" required name="entry.1387019190" data-constraints="@Required">
                   <label class="form-label" for="Hire_eq">Hire Equipment</label>
                 </div>
                 <br>
                 <div class="form-wrap">
-                  <input class="form-input" id="message" type="textarea" name="Hire_eq" data-constraints="@Required">
+                  <input class="form-input" id="message" type="textarea" name="Hire_eq" required name="entry.36726426" data-constraints="@Required">
                   <label class="form-label" for="message">Message</label>
                 </div>
                 
@@ -546,6 +549,7 @@
           </div>
         </div>
       </section>
+
       <!--Contact Us-->
       <!-- <section class="section section-lg bg-default text-center">
         <div class="container">
