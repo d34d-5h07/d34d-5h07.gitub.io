@@ -10,15 +10,76 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-      $(document).ready(function(){
-          $("#video-link-wrapper").modal('show');
-      });
-  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+<script>
+$(function() {
+  // CLOSE AND REMOVE ON ESC
+  $(document).on('keyup',function(e) {
+    if (e.keyCode == 27) {
+      $('.overlay').remove();
+    }
+  });
+  
+  // CLOSE AND REMOVE ON CLICK
+  $('body').on('click','.overlay, .close', function() {
+    $('.overlay').remove();
+  });
+  
+  // SO PLAYING WITH THE VIDEO CONTROLS DOES NOT
+  // CLOSE THE POPUP
+  $('body').on('click','.videoBox', function(e) {
+    e.stopPropagation();
+  });
+});
+</script>
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /> -->
+<style type="text/css">
+.overlay {
+  width: 100%;
+  background: rgba(0,0,0,.75);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.videoBox {
+  position: fixed;
+  width: 90%;
+  left: 50%;
+  top:50%;
+  transform: translateY(-50%) translateX(-50%);
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+.videoBox video {
+  width: 100%;
+}
+.close {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  display: block;
+  background: transparent url(images/close.png) no-repeat center center;
+  opacity: .8;
+}
+.close:hover {
+  opacity: 1;
+}
+@media (min-width: 767px) {
+  .videoBox {
+    width: 40%;
+  }
+}
+</style>
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
   </head>
   
   <body>
+
     <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <div class="preloader">
       <div class="preloader-body">
@@ -50,6 +111,7 @@
             </div>
           </nav>
         </div>
+  
       </header>
       <!-- Section Swiper Slider-->
       <section class="section section-swiper-absoulte context-dark text-center wow fadeIn">
@@ -79,6 +141,12 @@
             </div>
           </div>
           <!-- Thumbnail Video Link-->
+          <div class="overlay">
+            <div class="videoBox" id="videobox">
+              <a class="close"></a>
+              <video autoplay controls src="images/sample.mp4"></video>
+            </div>
+          </div>
           <div class="video-link-wrapper">
             <div class="unit align-items-center">
               <div class="unit-body text-right">
@@ -100,7 +168,6 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-  
       <!-- Section Biggest 2019 Digital Conference-->
       <section class="section section-lg bg-default wow fadeIn">
         <div class="container">
