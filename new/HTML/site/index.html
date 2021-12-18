@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    
 <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /> -->
 <script>
   document.getElementById('vid').play();
@@ -35,6 +37,7 @@
   text-align: center;
   border-radius: 5px;
 }
+
 .videoBox video {
   width: 100%;
 }
@@ -614,10 +617,10 @@
     </div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
-    <div id="div11">
-      <div class="videoBox" id="div11">
+    <div>
+      <div class="videoBox" >
         <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false; '>x</span>
-        <video id="vid" autoplay controls src="images/sample.mp4" muted></video>
+        <video autoplay controls src="images/sample.mp4" muted></video>
       </div>
     </div>
   </body>
