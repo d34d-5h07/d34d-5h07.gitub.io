@@ -11,27 +11,6 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-<script>
-$(function() {
-  // CLOSE AND REMOVE ON ESC
-  $(document).on('keyup',function(e) {
-    if (e.keyCode == 27) {
-      $('.overlay').remove();
-    }
-  });
-  
-  // CLOSE AND REMOVE ON CLICK
-  $('body').on('click','.overlay, .close', function() {
-    $('.overlay').remove();
-  });
-  
-  // SO PLAYING WITH THE VIDEO CONTROLS DOES NOT
-  // CLOSE THE POPUP
-  $('body').on('click','.videoBox', function(e) {
-    e.stopPropagation();
-  });
-});
-</script>
 <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" /> -->
 <style type="text/css">
 .overlay {
@@ -56,19 +35,20 @@ $(function() {
 .videoBox video {
   width: 100%;
 }
-.close {
-  width: 36px;
-  height: 36px;
-  position: absolute;
-  top: -18px;
-  right: -18px;
-  display: block;
-  background: transparent url(images/close.png) no-repeat center center;
-  opacity: .8;
+#close {
+    float:right;
+    display:inline-block;
+    padding:2px 5px;
+    background:#ccc;
 }
-.close:hover {
-  opacity: 1;
-}
+
+#close:hover {
+        float:right;
+        display:inline-block;
+        padding:2px 5px;
+        background:#ccc;
+    color:#fff;
+    }
 @media (min-width: 767px) {
   .videoBox {
     width: 40%;
@@ -90,6 +70,7 @@ $(function() {
       </div>
     </div>
     <div class="page">
+      
       <!-- Section Header Default-->
       <header class="section page-header">
         <!--RD Navbar-->
@@ -113,6 +94,7 @@ $(function() {
         </div>
   
       </header>
+      
       <!-- Section Swiper Slider-->
       <section class="section section-swiper-absoulte context-dark text-center wow fadeIn">
         <!-- Waves-->
@@ -128,6 +110,7 @@ $(function() {
                     <path opacity="0.08" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H319L299 25L319 49L0 0Z" fill="white"></path>
                   </svg>
                 </div>
+
                 <h4 class="wow fadeInUp text-spacing-200" data-wow-delay=".8s" data-caption-animate="fadeInUp" data-caption-delay="300" data-caption-duration="900">quote</h4>
                 <h1 class="wow fadeScale" data-caption-animate="fadeInUp" data-caption-delay="100" data-caption-duration="900">text</h1>
                 <!-- List Inline-->
@@ -141,12 +124,7 @@ $(function() {
             </div>
           </div>
           <!-- Thumbnail Video Link-->
-          <div class="overlay">
-            <div class="videoBox" id="videobox">
-              <a class="close"></a>
-              <video autoplay controls src="images/sample.mp4"></video>
-            </div>
-          </div>
+
           <div class="video-link-wrapper">
             <div class="unit align-items-center">
               <div class="unit-body text-right">
@@ -633,5 +611,11 @@ $(function() {
     </div>
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
+    <div id="div11">
+      <div class="videoBox" id="div11">
+        <span id='close' onclick='this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode); return false;'>x</span>
+        <video autoplay controls src="images/sample.mp4"></video>
+      </div>
+    </div>
   </body>
 </html>
