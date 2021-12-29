@@ -88,15 +88,15 @@ nav img{
     letter-spacing: 5px;
 text-align: center;
 }
-.hacker1 {
+.loading{
     font-size: 35px;
     font-family: 'VT323', monospace;
-    letter-spacing: 3px;
+    letter-spacing: 7px;
     text-align: center;
     color: rgba(0, 250, 0, 0.842);
 
 }
-.hacker1::first-letter {
+.loading::first-letter {
     color: red;
     font-size: 37px;
 }
