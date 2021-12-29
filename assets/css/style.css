@@ -431,7 +431,7 @@ a:visited {
         %;
     }
     .body .name{
-        padding: 2px;
+        padding: 5px;
     }
 }
 @keyframes blink {
