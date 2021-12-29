@@ -25,6 +25,7 @@ a{
 }
 #main.light .change{
     fill: black;
+
 }
 /* end dark mode */
 /* main section */
@@ -84,7 +85,7 @@ nav img{
 .aboutme_heading{
     font-size: 30px;
     font-family: 'VT323', monospace;
-    padding: 40px;
+    padding-top: 100px;
     letter-spacing: 5px;
 text-align: center;
 }
@@ -112,7 +113,7 @@ text-align: center;
 
 /* type writer text about start */
 .wrapper {
-    height: 30vh;
+    height: 40vh;
     /*This part is important for centering*/
     display: flex;
     align-items: center;
@@ -140,18 +141,48 @@ text-align: center;
   
   /* Animation */
   #parent {
-    animation: animated-text 2s steps(30,end) 1s 1 normal both;
+    animation: animated-text 5s steps(80,end) 1s 1 normal both;
   }
   
   #border {
      animation: animated-cursor 600ms steps(30,end) infinite;
+  }
+
+  #parent1 {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: monospace;
+    padding-top: 2px;
+    font-size: 20px;
+    color: rgba(255,255,255,.70);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  #border2 {
+    border-bottom: solid 3px rgba(0, 250, 0, 0.842);
+    position: absolute;
+    right: -7px;
+    width: 20px;
+  }
+  
+  /* Animation */
+  #parent1 {
+    animation: animated-text 5s steps(50 ,end) 1s 1 normal both;
+    animation-delay: 6s;
+  }
+  
+  #border2 {
+     animation: animated-cursor 600ms steps(30,end) infinite;
+     animation-delay: 6s;
   }
   
   /* text animation */
   
   @keyframes animated-text{
     from{width: 0;}
-    to{width: 300px;}
+    to{width: 80ch;}
   }
   
   /* cursor animations */
@@ -432,6 +463,9 @@ a:visited {
     }
     .body .name{
         padding: 5px;
+    }
+    .para{
+        padding: 15px;
     }
 }
 @keyframes blink {
