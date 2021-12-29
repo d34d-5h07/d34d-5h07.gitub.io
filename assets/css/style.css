@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 *{
     padding: 0;
     margin: 0;
@@ -52,6 +53,7 @@ nav img{
     float: right;
     width: 30px;
 }
+
 .logotext{
     letter-spacing: .1em;
     font-size: 15px;
@@ -78,6 +80,90 @@ nav img{
 .dark{
     cursor: pointer;
 }
+
+.aboutme_heading{
+    font-size: 30px;
+    font-family: 'VT323', monospace;
+    padding: 40px;
+    letter-spacing: 5px;
+text-align: center;
+}
+.hacker1 {
+    font-size: 35px;
+    font-family: 'VT323', monospace;
+    letter-spacing: 3px;
+    text-align: center;
+    color: rgba(0, 250, 0, 0.842);
+
+}
+.hacker1::first-letter {
+    color: red;
+    font-size: 37px;
+}
+
+.glow {
+
+    color:#a9a9b3;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: 'VT323', monospace;
+  }
+  
+
+/* type writer text about start */
+.wrapper {
+    height: 30vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+#parent {
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden; 
+    font-family: monospace;
+    font-size: 20px;
+    color: rgba(255,255,255,.70);
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  #border {
+    border-bottom: solid 3px rgba(0, 250, 0, 0.842);
+    position: absolute;
+    right: -7px;
+    width: 20px;
+  }
+  
+  /* Animation */
+  #parent {
+    animation: animated-text 2s steps(30,end) 1s 1 normal both;
+  }
+  
+  #border {
+     animation: animated-cursor 600ms steps(30,end) infinite;
+  }
+  
+  /* text animation */
+  
+  @keyframes animated-text{
+    from{width: 0;}
+    to{width: 300px;}
+  }
+  
+  /* cursor animations */
+  
+  @keyframes animated-cursor{
+    from{border-bottom-color: rgba(0, 253, 0, 0.938);}
+    to{border-bottom-color: transparent;}
+  }
+
+  /* type writer text animation end */
+
+
 /* end nav */
 /* body */
 #tabs{
@@ -87,6 +173,7 @@ nav img{
     height: 100vh;
     width: 100%;
 }
+
 .body{
     margin: 0 auto;
     position: absolute;
@@ -139,7 +226,7 @@ nav img{
     height: 100px;  
 }
 .body .name{
-    padding: 4vh 0;
+    padding: 1vh 0;
 }
 .name h1{
     padding: 1vh;
@@ -147,8 +234,9 @@ nav img{
     letter-spacing: 2px;
 }
 .name span{
-    color: red;
+    color: rgb(21, 255, 0);
 }
+
 i.fa{
     font-size: 20px;
 }
@@ -254,6 +342,29 @@ i.fa{
     color: rgb(130, 255, 5);
     
 }
+
+.buttonabout{
+    text-align: center;
+
+}
+.button_about{
+    font-weight: 600;
+    font-size: 15px;
+    padding: 1vh 3vh ;
+    display: inline-block;
+    text-transform: uppercase;
+    color: rgb(96, 192, 0);
+    border-bottom: 2px solid chartreuse;
+    border-radius: 15px ;
+    -webkit-border-radius: 15px ;
+    -moz-border-radius: 15px ;
+    -ms-border-radius: 15px ;
+    -o-border-radius: 15px ;
+}
+.button_about:hover{
+    color: rgb(130, 255, 5);
+    
+}
 /* about section */
 .about{
     text-align: center;
@@ -262,8 +373,21 @@ i.fa{
     max-width: 500px;
 }
 .about h2{
-    border-bottom: 1px solid chartreuse;
+    border-bottom: 1px solid chartreuse;    
 }
+
+a:link{
+    color:#a9a9b3;
+}
+a:hover{
+    color: rgb(128, 255, 0);
+}
+a:visited {
+    color:#a9a9b3;
+  }
+  a:visited:hover {
+    color: rgb(128, 255, 0);
+    }
 .about p{
     padding: 5vh 0 4vh 0;
 }
