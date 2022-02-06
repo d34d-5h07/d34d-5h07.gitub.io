@@ -1,2 +1,108 @@
-html{display:table;width:100%}body{display:table-cell;vertical-align:middle;text-align:center;font-size:24px;font-weight:600;font-family:sans-serif;-webkit-font-smoothing:antialiased;color:#444;background-color:#000;perspective:1000}body,html{width:100%;height:100%;overflow:hidden}canvas{image-rendering:auto;image-rendering:crisp-edges;image-rendering:pixelated}button{font:inherit;appearance:none;-webkit-appearance:none;outline:none;padding:8px 16px;color:#000;text-shadow:0 1px 2px hsla(0,0%,100%,.15);background-color:#ad68d9;background-image:linear-gradient(#ad68d9,#a960d7);box-shadow:inset 0 0 2px hsla(0,0%,100%,.15);border:none;border-radius:8px;cursor:pointer;transition:all .15s ease-out}button:hover{transform:scale(1.05);background-image:linear-gradient(#c391e3,#bf89e1)}button:active{transform:scale(.95);opacity:.5}audio{position:absolute;width:0;height:0;visibility:hidden}@keyframes Cue-In{0%{opacity:0;transform:scale(.1) rotateX(45deg)}to{transform:scale(1) rotateX(0)}}.cue-in{animation:Cue-In 2s ease-in-out}
+html{display:table;width:100%}body{display:table-cell;vertical-align:middle;text-align:center;font-size:24px;font-weight:600;font-family:sans-serif;-webkit-font-smoothing:antialiased;color:#444;background-color:#000;perspective:1000}body,html{width:100%;height:100%;overflow:hidden}canvas{image-rendering:auto;image-rendering:crisp-edges;image-rendering:pixelated}button{font:inherit;appearance:none;-webkit-appearance:none;outline:none;padding:8px 16px;color:#000;text-shadow:0 1px 2px hsla(0,0%,100%,.15);background-color:#ad68d9;background-image:linear-gradient(#ad68d9,#a960d7);box-shadow:inset 0 0 2px hsla(0,0%,100%,.15);border:none;border-radius:8px;cursor:pointer;transition:all .15s ease-out}button:hover{transform:scale(1.05);background-image:linear-gradient(#c391e3,#bf89e1)}button:active{transform:scale(.95);opacity:.5}audio{position:absolute;width:0;height:0;visibility:hidden}
+
+@keyframes Cue-In{0%{opacity:0;transform:scale(.1) rotateX(45deg)}to{transform:scale(1) rotateX(0)}}.cue-in{animation:Cue-In 2s ease-in-out}
+
+html,
+css {
+  width: 100%;
+  height: 100%;
+}
+
+.position {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 15%;
+}
+
+#workarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1a3e;
+  font-family: Raleway;
+}
+
+#personal {
+  color:white;
+  text-decoration:none;
+  position:absolute;
+  bottom:15px;
+  right:2%;
+}
+/*    start code for the actual button:         */
+
+
+/*   
+    Spot is the span on the inside of the href that
+    fills the parent and makes the hover and link work
+    for the entire div
+*/
+
+.spot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/*
+    This is the outer svg wrapper that the SVG itself will 
+    fill. Multiple svg-wrapper classes can be put side by side.
+*/
+
+.svg-wrapper {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 150px;
+  /*make sure to use same height/width as in the html*/
+  height: 40px;
+  display: inline-block;
+  position:absolute;
+top:0;
+right:0;
+  
+}
+/*
+  This is where we define the fill, color, thickness,
+  and stroke pattern of the SVG when there is no hover.
+  The dasharray and offset together define the line position
+  under the words. Here's also where the transition speed is set.
+*/
+
+#shape {
+  stroke-width: 6px;
+  fill: transparent;
+  stroke: rgb(130, 55, 180);
+  stroke-dasharray: 85 400;
+  stroke-dashoffset: -220;
+  transition: 1s all ease;
+}
+/* 
+    Pushing the text up into the SVG. Without this the
+    text would be below the div's.
+*/
+
+#text {
+  margin-top: -40px;
+  text-align: center;
+}
+
+#text a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+/* 
+    Changing the shape on hover. I change the color of the stroke,
+make it thinner, then set it to again wrap around the entire parent element.
+*/
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #720b80;
+}
 /*# sourceMappingURL=style.e5beaf9c.css.map */
