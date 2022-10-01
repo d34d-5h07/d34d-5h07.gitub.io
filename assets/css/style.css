@@ -303,6 +303,10 @@ i.fa{
     fill:black;
 	transform:scale(1.20);
 }
+.spotify:hover{
+    fill:rgb(127, 255, 0);
+	transform:scale(1.15);   
+}
 .discord:hover{
 	fill:#5865F2;
 	transform:scale(1.15);
